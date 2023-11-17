@@ -1,0 +1,138 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    
+    height: 100vh; 
+    padding: 0%;
+    margin: 0%;
+    background-color: #062863;
+}
+
+.conteudo{
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: #f8f8f2;
+    display:block;
+    padding: 30px 50px 30px 40px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.iconeusuario{
+    display:block;
+    padding: 30px 50px 30px 40px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.nomeusuario{
+    color: #f8f8f2;
+    display:block;
+    font-size: 20px;
+    margin-top: 0px; 
+    margin-left: 35px;
+}
+
+header{
+    background-color: #000035;
+    padding: 10px;
+}
+
+
+.menu{
+    height: 100%;
+    width: 0%;
+    background-color:#000035;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition: width 0.3s;
+}
+
+.navOpcoes{
+    margin-left: 0px;
+    margin-top: 60px;
+}
+
+.conteudo{
+    margin-left: 80px;
+}
+
+.fechar{
+
+    background: #e8f1f2;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    
+    margin-top: 30px;
+    margin-left: 40px;
+
+}
+
+.abrir{
+    background: #e8f1f2;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.imgfechar{
+    width: 50px;
+    height: 50px;
+}
+
+.imgabrir{
+    width: 50px;
+    height: 50px;
+
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+}
+
+.card { 
+    background-color: #607ec9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 2);
+    height: 300px;
+    width: 500px;
+}
+
+#logocard{
+
+    border: 2px solid #e8f1f2;
+    background: #062863;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-left: 180px;
+    display:flex;
+    align-items: center;
+
+}
+
+#imgcard{
+    margin-left: 3px;
+    width: 70px;
+    height: 70px;
+}
+
+

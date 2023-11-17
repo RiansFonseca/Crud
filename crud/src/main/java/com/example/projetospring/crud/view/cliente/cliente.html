@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CRUD</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+    <link rel="stylesheet" href="../mainview/style.css">
+    <!-- add font-awesome cdn version-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header></header>
+    <div class="abrir">
+        <a class="btnabrir">
+            <img class="imgabrir" src="../mainview/icons8-divisa-circulada-à-direita-48.png">
+        </a>
+    </div>
+    <nav class="menu">
+        <header>
+            <div class="fechar">
+                <a class="btnfechar">
+                    <img class="imgfechar" src="../mainview/icons8-divisa-circulada-à-direita-48.png">
+                </a>
+            </div>
+        </header>
+        <div class="usuario">
+            <img class= "iconeusuario" src="../mainview/icons8-administrador-masculino-50 (1).png" alt="">
+            <p class="nomeusuario">USUÁRIO</p>         
+        </div>
+
+        <div class="navOpcoes">
+            <a class="item" href="../cliente/cliente.html">Clientes</a>
+            <a class="item" href="../produto/produto.html">Produtos</a>
+            <a class="item" href="#">Pedidos</a>
+            <a class="item" href="../mainview/index.html" >Início</a>
+        </div>
+    </nav>
+    
+    <div class="row conteudo" style="margin-left: 10px;">
+        <div class="col">
+            <form id="formcliente">
+                <input type="hidden" name="id" id="id"/>
+                <fieldset id="forms__input">
+                    <legend style="color: whitesmoke;">Cadastro Cliente</legend>
+                    <p>
+                        <label for="txnome" style="color: whitesmoke;">Nome</label>
+                        <input id="txnome" name="nome" type="text" required placeholder="Digite o nome" />
+                    </p>
+                    <p>
+                        <label for="txemail" style="color: whitesmoke;">Email</label>
+                        <input id="txemail" name="email" type="email" required placeholder="Digite o email" />
+                    </p>
+                    <p>
+                        <label for="txidade" style="color: whitesmoke;">Idade</label>
+                        <input id="txidade" name="idade" type="number" required placeholder="Digite idade" />
+                    </p>
+                    <p class="text-right">
+                        <input type="submit" class="button" id="btnSalvar" style="background-color: #a626a6; color: white;" value="Salvar" />
+                        <input type="reset" class="button" value="Limpar"/>
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="col">
+            <table class="striped" id="tablecliente">
+                <tr>
+                    <th style="color: whitesmoke;">Nome</th>
+                    <th style="color: whitesmoke;">Email</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Leandro</td>
+                    <td>leandro.costa@ifba.edu.br</td>
+                    <td>
+                        <a href="#" onclick="alert('Carregar dados cliente com id :2')">
+                            <!--span style='font-size:40px;'>&#x270D;</span-->
+                            <span class="fa-solid fa-pencil"></span>
+                        </a>
+                        <a href="#" onclick="alert('Excluir cliente com id :2')">
+                            <span class="fa-solid fa-eraser"></span>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <script src="../mainview/style.js"></script>
+    <script src="cliente.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+CREATE TABLE clientes(
+    id SERIAL PRIMARY KEY NOT NULL,
+    nome VARCHAR(250) NOT NULL;
+    email VARCHAR(250) NOT NULL;
+    idade INT NOT NULL;
+);
