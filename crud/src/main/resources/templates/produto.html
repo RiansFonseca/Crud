@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CRUD</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <!-- add font-awesome cdn version-->
+</head>
+
+<body>
+    <header></header>
+    <div class="abrir">
+        <a class="btnabrir">
+            <img class="imgabrir" src="../static/images/icons8-divisa-circulada-à-direita-48.png">
+        </a>
+    </div>
+    <nav class="menu">
+        <header>
+            <div class="fechar">
+                <a class="btnfechar">
+                    <img class="imgfechar" src="../static/images/icons8-divisa-circulada-à-direita-48.png">
+                </a>
+            </div>
+        </header>
+        <div class="usuario">
+            <img class= "iconeusuario" src="../static/images/icons8-administrador-masculino-50 (1).png" alt="">
+            <p class="nomeusuario">USUÁRIO</p>         
+        </div>
+
+        <div class="navOpcoes">
+            <a class="item" th:href="@{/clientePage}">Clientes</a>
+            <a class="item" th:href="@{/produtoPage}">Produtos</a>
+            <a class="item" href="#">Pedidos</a>
+            <a class="item" th:href="@{/}" >Início</a>
+        </div>
+    </nav>
+    
+    <div class="row conteudo" style="margin-left: 10px;">
+        <div class="col">
+            <form id="formproduto">
+                <input type="hidden" name="id" id="id"/>
+                <fieldset id="forms__input">
+                    <legend style="color: whitesmoke;">Cadastro de Produtos</legend>
+                    <p>
+                        <label for="txnome" style="color: whitesmoke;">Nome</label>
+                        <input id="txnome" name="nome" type="text" required placeholder="Digite o nome" />
+                    </p>
+                    <p>
+                        <label for="txpreco" style="color: whitesmoke;">Preço</label>
+                        <input id="txpreco" name="preco" type="number" step="any" placeholder="R$ 0,00" />
+                    </p>
+                    <p>
+                        <label for="txvalidade" style="color: whitesmoke;">Validade</label>
+                        <input id="txvalidade" name="validade" type="date" required placeholder="Digite a validade" />
+                    </p>
+                    <p class="text-right">
+                        <input type="submit" class="button" id="btnSalvar" style="background-color: #a626a6; color: white;" value="Salvar" />
+                        <input type="reset" class="button" value="Limpar"/>
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="col janelatabela">
+            <table class="" id="table">
+                <tr class="tableheader">
+                    <th>Nome</th>
+                    <th>Preço</th>
+                    <th>Validade</th>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <script src="../static/javascript/style.js"></script>
+    <script src="../static/javascript/produto.js"></script>
+</body>
+
+</html>

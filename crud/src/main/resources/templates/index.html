@@ -7,16 +7,14 @@
     <title>CRUD</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="https://unpkg.com/chota@latest">
-    <link rel="stylesheet" href="style.css">
-    <!-- add font-awesome cdn version-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <link rel="stylesheet" href="../static/css/style.css">
+
 </head>
 <body>
     <header></header>
     <div class="abrir">
         <a class="btnabrir">
-            <img class="imgabrir" src="icons8-divisa-circulada-à-direita-48.png">
+            <img class="imgabrir" src="../static/images/icons8-divisa-circulada-à-direita-48.png">
         </a>
     </div>
 
@@ -24,31 +22,31 @@
         <header>
             <div class="fechar">
                 <a class="btnfechar">
-                    <img class="imgfechar" src="icons8-divisa-circulada-à-direita-48.png">
+                    <img class="imgfechar" src="../static/images/icons8-divisa-circulada-à-direita-48.png">
                 </a>
             </div>
         </header>
 
         <div class="usuario">
-            <img class= "iconeusuario" src="icons8-administrador-masculino-50 (1).png" alt="">
+            <img class= "iconeusuario" src="../static/images/icons8-administrador-masculino-50 (1).png" alt="">
             <p class="nomeusuario">USUÁRIO</p>         
         </div>
 
         <div class="navOpcoes">
-            <a class="item" href="../cliente/cliente.html">Clientes</a>
-            <a class="item" href="../produto/produto.html">Produtos</a>
+            <a class="item" th:href="@{/clientePage}">Clientes</a>
+            <a class="item" th:href="@{/produtoPage}">Produtos</a>
             <a class="item" href="#">Pedidos</a>
-            <a class="item" href="../mainview/index.html">Início</a>
+            <a class="item" th:href="@{/}">Início</a>
         </div>
     </nav>
     <div class="card">
         <h1 style="color: antiquewhite; text-align: center; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 60px;">WEB CRUD</h1>
         <p style="color: antiquewhite; text-align: center; font-size:24px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">CADASTRO DE CLIENTES, PRODUTOS e REGISTRO DE PEDIDOS</p>
         <div id="logocard">
-            <img id="imgcard" src="icons8-computador-64.png">
+            <img id="imgcard" src="../static/images/icons8-computador-64.png">
         </div>
     </div>
-    <script src="style.js"></script>
+    <script src="../static/javascript/style.js"></script>
 </body>
 
 
