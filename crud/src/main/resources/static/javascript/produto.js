@@ -70,7 +70,7 @@ function formatarPreco(preco) {
 }
 
 function limparTabela() {
-    let table = document.getElementById("table");
+    let table = document.getElementById("tableProduto");
     var rowCount = table.rows.length;
     for (var x = rowCount - 1; x > 0; x--) {
         table.deleteRow(x);

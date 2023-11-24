@@ -55,7 +55,7 @@ function getClientes(){
 }
 
 function limparTabela() {
-    let table = document.getElementById("tablecliente");
+    let table = document.getElementById("tableCliente");
     var rowCount = table.rows.length;
     for (var x = rowCount - 1; x > 0; x--) {
         table.deleteRow(x);

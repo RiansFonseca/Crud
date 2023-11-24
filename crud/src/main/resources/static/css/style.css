@@ -141,7 +141,14 @@ header{
     width: 100%
 }
 
-#table tr td{
+#tableProduto tr td{
+    flex: 1;
+    position: relative;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+#tableCliente tr td{
     flex: 1;
     position: relative;
     background-color: whitesmoke;
