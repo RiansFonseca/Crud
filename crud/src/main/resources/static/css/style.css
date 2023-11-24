@@ -135,4 +135,47 @@ header{
     height: 70px;
 }
 
+.novalinha{
+    display: flex;
+    flex: 1;
+    width: 100%
+}
+
+#tableProduto tr td{
+    flex: 1;
+    position: relative;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+#tableCliente tr td{
+    flex: 1;
+    position: relative;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+
+.tableheader{
+    background: #000035; 
+}
+
+.tableheader th{
+    padding-left: 10px;
+    color: whitesmoke;
+}
+
+
+.janelatabela{
+    border: 2px solid whitesmoke;
+    position: relative;
+    top: 8px;
+    max-width: 100%;
+    max-height: 320px;
+    overflow-y: auto;
+    background-color: white;
+    padding-left: 0%;
+    padding-right: 0%;
+    
+}
 

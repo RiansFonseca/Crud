@@ -1,0 +1,6 @@
+CREATE TABLE produtos(
+    id SERIAL PRIMARY KEY NOT NULL,
+    nome VARCHAR(250) NOT NULL;
+    preco DECIMAL(6,2) NOT NULL;
+    validade DATE NOT NULL
+);
